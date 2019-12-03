@@ -7,6 +7,7 @@ urlpatterns = [
     path("", include("landing.urls")),
     path("admin/", admin.site.urls),
     path("landing/", include("landing.urls")),
+    path("lnapi/", include("lnurlserver.urls"))
 ]
 
 if bool(settings.DEBUG):
